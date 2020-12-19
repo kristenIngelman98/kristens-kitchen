@@ -1,11 +1,11 @@
 import React from 'react';
-import { LunchData } from './data/LunchData';
+import { DinnerData } from './data/DinnerData';
 
 const Lunch = (props) => {
   return (
     <div className="">
-    <h1>Lunch</h1>
-    {LunchData.map((recipeDetail, index)=>{
+    <h1>Dinner</h1>
+    {DinnerData.map((recipeDetail, index)=>{
       return (
         <div>
           <img className="" src={recipeDetail.image} alt="member"/>

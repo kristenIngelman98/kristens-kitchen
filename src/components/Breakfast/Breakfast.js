@@ -19,16 +19,3 @@ const Breakfast = (props) => {
   )
 }
 export default Breakfast;
-
-
-// <div className="features__individual__parent">
-// {FeatureData.map((featureDetail, index)=>{
-//   return (
-//     <div key={featureDetail.id} className="features__individual">
-//       <img src={featureDetail.image} alt={featureDetail.alt}/>
-//       <h2  className="features__name">{featureDetail.feature}</h2>
-//       <p  className="features__description">{featureDetail.featureDescription}</p>
-//   </div>
-//   )}
-// )}
-// </div>
