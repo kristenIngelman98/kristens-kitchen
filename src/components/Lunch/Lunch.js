@@ -4,7 +4,7 @@ import { LunchData } from './data/LunchData';
 const Lunch = (props) => {
   return (
     <div className="">
-    <h1>Lunch</h1>
+    <h1 className="h1-title">Lunch</h1>
     {LunchData.map((recipeDetail, index)=>{
       return (
         <div>

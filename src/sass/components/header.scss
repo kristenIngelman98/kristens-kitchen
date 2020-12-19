@@ -2,3 +2,21 @@
   font-family: $logo-font;
   text-align: center;
 }
+
+.header__menu {
+  list-style: none;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.header__menu a {
+  text-decoration: none;
+  // color: black;
+  
+}
+
+.header__menu li {
+  font-family: $menu-font;
+  text-align: center;
+}
