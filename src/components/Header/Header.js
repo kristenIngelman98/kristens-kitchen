@@ -16,7 +16,7 @@ export default function Header() {
           <li>snacks</li>
           <li>sweets</li>
         </ul>
-        <ul className="header__about/contact">
+        <ul className="header__menu--about">
           <li>about</li>
           <li>contact</li>
         </ul>

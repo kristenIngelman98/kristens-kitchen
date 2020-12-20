@@ -1,4 +1,19 @@
 .h1-title {
   font-family: $h1-font;
   font-weight: 300;
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+
+.recipe-wrapper {
+  padding: 10px;
+}
+
+.recipe-title {
+  font-family: $capital-font;
+}
+
+.recipe-description,
+.recipe-date {
+  font-family: $body-font;
 }

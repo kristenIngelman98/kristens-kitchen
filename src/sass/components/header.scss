@@ -5,18 +5,29 @@
 
 .header__menu {
   list-style: none;
-  padding: 0 30px;
+  padding: 0 10px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
 
-.header__menu a {
-  text-decoration: none;
-  // color: black;
-  
+.header__menu--about {
+  list-style: none;
+  padding: 0 115px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.header__menu li {
-  font-family: $menu-font;
+
+
+.header__menu a,
+.header__menu--about a {
+  text-decoration: none;
+  // color: black;
+}
+
+.header__menu li,
+.header__menu--about li {
+  font-family: $capital-font;
   text-align: center;
+  font-size: 15px;
 }

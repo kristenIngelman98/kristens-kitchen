@@ -7,11 +7,12 @@ const Breakfast = (props) => {
     <h1 className="h1-title">Breakfast</h1>
     {BreakfastData.map((recipeDetail, index)=>{
       return (
-        <div>
-          <img className="" src={recipeDetail.image} alt="member"/>
-          <p className="">{recipeDetail.title}</p>
-          <p className="">{recipeDetail.description}</p>
-          <p className="">{recipeDetail.date}</p>
+        <div className="recipe-wrapper">
+          <p className="recipe-title">{recipeDetail.title}</p>
+          <img className="recipe-image" src={recipeDetail.image} alt="member"/>
+          <p className="recipe-date">{recipeDetail.date}</p>
+          <p className="recipe-description">{recipeDetail.description}</p>
+        
         </div>
       )
     })}
