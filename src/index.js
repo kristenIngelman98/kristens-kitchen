@@ -2,15 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './sass/main.scss';
-// import App from './App';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import App from './App';
+// import NavBar from './components/Header/NavBar';
+// // import Header from './components/Header/Header';
+// import Footer from './components/Footer/Footer';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
-    <Footer />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

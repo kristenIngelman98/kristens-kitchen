@@ -31,3 +31,33 @@
   text-align: center;
   font-size: 15px;
 }
+
+
+
+  .hamburgerDropDown {
+    position: fixed;
+    left: 40px;
+    top: 40px;
+    width: 300px;
+    // background-color: black;
+    border: 1px solid bisque;
+  }
+  
+  .hamburgerDropDown ul{
+    padding: 10px;
+  }
+  
+  /* Position of the hamburger symbol */
+  .navbar div {
+    right: -140px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  
+
+
+
+/* Hambuger Menu Dropdown */
+
+/* The ul styling */

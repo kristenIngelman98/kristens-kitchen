@@ -1,6 +1,9 @@
-import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import React from 'react';
+import { NavLink } from "react-router-dom";
+// import { NavLink } from 'react-router-dom';
 import HamburgerMenu from 'react-hamburger-menu';
+import Breakfast from '../Breakfast/Breakfast';
+import Lunch from '../Lunch/Lunch';
 
 class NavBar extends React.Component {
     constructor(){
@@ -24,7 +27,7 @@ class NavBar extends React.Component {
                     height={15}
                     strokeWidth={1}
                     rotate={0}
-                    color='white'
+                    color='black'
                     borderRadius={0}
                     animationDuration={0.5}
                 />
@@ -33,37 +36,49 @@ class NavBar extends React.Component {
 
     displayNavBar = () => {
         return (
-            <ul className='nav'>
-                    <li className='nav-link'><NavLink to='/' >Home</NavLink></li>
-                    <li className='nav-link'><NavLink to='/about'>About John Williams</NavLink></li>
-                    <li className='nav-link'><NavLink to='/criminalDefence'>Criminal Defence</NavLink></li>
-                    <li className='nav-link'><NavLink to='/DUIS'>DUIS</NavLink></li>
-                    <li className='nav-link'><NavLink to='/personalInjury'>Personal Personal Injury</NavLink></li>
-                    <li className='nav-link'><NavLink to='/contact'>Contact</NavLink></li>
+            <div>
+                <ul className='nav'>
+                        <li className='nav-link'><NavLink to='/breakfast'>Breakfast</NavLink></li>
+                        <li className='nav-link'><NavLink to='/lunch'>Lunch</NavLink></li>
+                        <li className='nav-link'><NavLink to='/dinner'>Dinner</NavLink></li>
+                        <li className='nav-link'><NavLink to='/snacks'>Snacks</NavLink></li>
+                        <li className='nav-link'><NavLink to='/sweets'>Sweets</NavLink></li>
                 </ul>
+            </div>
         )
     }
 
     displayMobileMenu = () => {
         return (
-            <ul className='hamburgerDropDown'>
-                    <li className='nav-link'><NavLink to='/' >Home</NavLink></li>
-                    <li className='nav-link'><NavLink to='/about'>About John Williams</NavLink></li>
-                    <li className='nav-link'><NavLink to='/criminalDefence'>Criminal Defence</NavLink></li>
-                    <li className='nav-link'><NavLink to='/DUIS'>DUIS</NavLink></li>
-                    <li className='nav-link'><NavLink to='/personalInjury'>Personal Personal Injury</NavLink></li>
-                    <li className='nav-link'><NavLink to='/contact'>Contact</NavLink></li>
-                </ul>
-        )
+           
+                <ul className='hamburgerDropDown'>
+                    <li className='nav-link'><NavLink to='/breakfast'>Breakfast</NavLink></li>
+                    <li className='nav-link'><NavLink to='/lunch'>Lunch</NavLink></li>
+                    <li className='nav-link'><NavLink to='/dinner'>Dinner</NavLink></li>
+                    <li className='nav-link'><NavLink to='/snacks'>Snacks</NavLink></li>
+                    <li className='nav-link'><NavLink to='/sweets'>Sweets</NavLink></li>
+                </ul>       
+        )  
     }
+
+    
 
     render() {
         return (
             <div className='navbar'>
+                <h1 className="header__title">Kristen's Kitchen</h1>
                 { this.state.open ?  this.displayMobileMenu() : null}
                 {window.innerWidth > 1200 ? this.displayNavBar() : this.displayHamburgerMenu()}
             </div>
+
+          
+         
+            
+
+            
         );
+
+        
     }
 }
 
