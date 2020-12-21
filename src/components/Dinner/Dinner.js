@@ -1,7 +1,7 @@
 import React from 'react';
 import { DinnerData } from './data/DinnerData';
 
-const Lunch = (props) => {
+const Dinner = (props) => {
   return (
     <div className="">
     <h1>Dinner</h1>
@@ -18,4 +18,4 @@ const Lunch = (props) => {
     </div>
   )
 }
-export default Lunch;
+export default Dinner;
