@@ -2,7 +2,7 @@
 // import './App.css';
 import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
 
-import NavBar from './components/Header/NavBar';
+import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Breakfast from './components/Breakfast/Breakfast';
 import Lunch from './components/Lunch/Lunch';
@@ -15,7 +15,7 @@ function App() {
     
     
     <div className="App">
-      <NavBar />
+      <Header />
       <Footer />
     </div>
 

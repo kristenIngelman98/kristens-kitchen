@@ -6,7 +6,7 @@ import Lunch from '../Lunch/Lunch';
 
 export default function Header() {
   return (
-    <Router>
+    
       <header className="header">
         <h1 className="header__title">Kristen's Kitchen</h1>
         <ul className="header__menu">
@@ -22,10 +22,7 @@ export default function Header() {
         </ul>
       </header>
 
-      <Switch>
-        <Route path="/breakfast" component={Breakfast} />
-        <Route path="/lunch" component={Lunch} />
-      </Switch>
-    </Router>
+    
+    
   );
 }
