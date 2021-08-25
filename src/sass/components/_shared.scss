@@ -1,12 +1,16 @@
 .h1-title {
   font-family: $h1-font;
   font-weight: 300;
-  padding-left: 10px;
+  // padding-left: 10px;
   margin-bottom: 0;
+  grid-column: 1/3;
+  align-items: flex-start;
 }
 
 .recipe-wrapper {
   padding: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .recipe-title {
@@ -16,4 +20,32 @@
 .recipe-description,
 .recipe-date {
   font-family: $body-font;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 700px) {
+    .recipe-wrapper {
+      display: grid;
+      grid-template-columns: repeat( 2, 1fr);
+      justify-items: center;
+      grid-gap: 20px;
+    }
+
+    img {
+      max-width: 300px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+  .recipe-wrapper {
+    grid-template-columns: repeat( 3, 1fr);
+  }
+
+  .h1-title {
+    grid-column: 1/4;
+  }
 }

@@ -12,18 +12,14 @@ import Lunch from './components/Lunch/Lunch';
 function App() {
   return (
     <Router>
-    
-    
-    <div className="App">
-      <Header />
+      <div className="App">
+        <Header />
+        <Switch>
+        <Route path="/breakfast" component={Breakfast} />
+        <Route path="/lunch" component={Lunch} />
+      </Switch>
       <Footer />
-    </div>
-
-    <Switch>
-      <Route path="/breakfast" component={Breakfast} />
-      <Route path="/lunch" component={Lunch} />
-
-    </Switch>
+      </div>
     </Router>
   );
 }

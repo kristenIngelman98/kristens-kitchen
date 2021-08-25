@@ -12,7 +12,7 @@ export const BreakfastData =
   {
     "date": "August 15th, 2020",
     "image": acai,
-    "title": "strawberry coconut acai bowl",
+    "title": "berry coconut acai bowl",
     "description": "add recipe description here"
   },
   {
