@@ -6,6 +6,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Breakfast from './components/Breakfast/Breakfast';
 import Lunch from './components/Lunch/Lunch';
+import RecipeIndividual from "./components/Recipe/RecipeIndividual";
 // import Dinner from './components/Dinner/Dinner';
 
 
@@ -17,6 +18,7 @@ function App() {
         <Switch>
         <Route path="/breakfast" component={Breakfast} />
         <Route path="/lunch" component={Lunch} />
+        <Route path="/recipe-individual/:id" render={(props) => <RecipeIndividual {...props} />} />
       </Switch>
       <Footer />
       </div>
